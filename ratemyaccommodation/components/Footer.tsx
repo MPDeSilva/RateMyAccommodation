@@ -115,7 +115,7 @@ export default function Example() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">University</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
@@ -127,7 +127,7 @@ export default function Example() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Review</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
@@ -141,7 +141,7 @@ export default function Example() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Account</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
@@ -207,7 +207,7 @@ export default function Example() {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+            &copy; 2021 RateMyAccommodation, Inc. All rights reserved.
           </p>
         </div>
       </div>

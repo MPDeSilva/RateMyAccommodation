@@ -1,23 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 import HeroBanner from '../components/HeroBanner'
 import NavBar from '../components/NavBar'
+import TestomonialBanner from '../components/TestomonialBanner'
 
 
 export default function Home() {
   return (
     <>
-    <NavBar />
+    <Header />
+    <HeroBanner data={undefined} />
+    <TestomonialBanner />
 
-    {/* <div className="flex h-full w-full ">
-    <div className=" flex flex-col max-w-7xl mx-auto justify-center items-center"> */}
-    <HeroBanner />
-     
-
-    {/* </div>
-    </div> */}
-    <Footer />
     </>
     
   )

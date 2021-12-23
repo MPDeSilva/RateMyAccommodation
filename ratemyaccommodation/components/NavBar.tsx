@@ -1,12 +1,13 @@
+/* eslint-disable @next/next/no-img-element */
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Search', href: '#', current: false },
-  { name: 'University', href: '#', current: false },
-  { name: 'Review', href: '#', current: false },
+  { name: 'Search', href: '/search', current: true },
+  { name: 'Universities', href: '#', current: false },
+  { name: 'Reviews', href: '#', current: false },
+  { name: 'Dashboard', href: '#', current: false }
 ]
 
 function classNames(...classes) {
@@ -18,7 +19,7 @@ import React from 'react'
 const NavBar = () => {
   return (
    
-      <Disclosure as="nav" className="flex bg-gray-800 w-full">
+      <Disclosure as="nav" className="flex fixed bg-gray-800 w-full z-50">
       {({ open }) => (
         <>
           <div className="flex max-w-7xl justify-between mx-auto w-full">
@@ -37,17 +38,18 @@ const NavBar = () => {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="/bunk-bed.png"
+                    className="block lg:hidden h-8 w-auto cursor-pointer"
+                    src="/logo2.png"
                     alt="Workflow"
                   />
            
                   <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="/bunk-bed.png"
+                    className="hidden lg:block h-8 w-auto cursor-pointer"
+                    src="/logo2.png"
                     alt="Workflow"
                   />
-                  <h1 className="mx-2 py-2 rounded-md text-sm font-medium uppercase text-white">Rate My Accommodation</h1>
+                  <a href='/'>
+                  <h1 className="mx-2 py-2 text-base md:text-2xl font-medium text-white rounded-md cursor-pointer">Rate My Accommodation</h1></a>
                 </div>
               </div>
               <div>
@@ -85,7 +87,7 @@ const NavBar = () => {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="/profile.svg"
                         alt=""
                       />
                     </Menu.Button>
