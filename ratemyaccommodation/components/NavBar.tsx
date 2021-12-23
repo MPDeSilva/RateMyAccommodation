@@ -15,6 +15,7 @@ function classNames(...classes) {
 }
 
 import React from 'react'
+import Link from 'next/link'
 
 const NavBar = () => {
   return (
@@ -48,17 +49,18 @@ const NavBar = () => {
                     src="/logo2.png"
                     alt="Workflow"
                   />
-                  <a href='/'>
-                  <h1 className="mx-2 py-2 text-base md:text-2xl font-medium text-white rounded-md cursor-pointer">Rate My Accommodation</h1></a>
+                  <Link href='/'>
+                  <h1 className="mx-2 py-2 text-base md:text-2xl font-medium text-white rounded-md cursor-pointer">Rate My Accommodation</h1></Link>
                 </div>
               </div>
               <div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        href={item.href} >
+                          <div
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -66,7 +68,8 @@ const NavBar = () => {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                        </div>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -104,32 +107,38 @@ const NavBar = () => {
                     <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
+                          <Link
+                            href="#" >
+                              <div
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Your Profile
-                          </a>
+                            </div>
+                          </Link>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
+                          <Link
+                            href="#" >
+                              <div
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Settings
-                          </a>
+                            </div>
+                          </Link>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
+                          <Link
+                            href="#" >
+                              <div
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Sign out
-                          </a>
+                            </div>
+                          </Link>
                         )}
                       </Menu.Item>
                     </Menu.Items>
