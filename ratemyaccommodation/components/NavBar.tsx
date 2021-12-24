@@ -1,6 +1,11 @@
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import logo from "/public/Logo.png"
+import profile from "/public/Profile.svg"
 
 const navigation = [
   { name: 'Search', href: '/search', current: true },
@@ -12,12 +17,6 @@ const navigation = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
-
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import logo from "../public/Logo.png"
-import profile from "../public/Profile.svg"
 
 const NavBar = () => {
   return (
