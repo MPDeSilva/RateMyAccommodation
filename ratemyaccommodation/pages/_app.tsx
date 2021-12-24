@@ -4,9 +4,15 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return <>
-  <NavBar />  
-  <Component {...pageProps} />
-  <Footer />
+  <div>
+    <NavBar />
+
+    <main className="flex flex-col" >
+      <Component {...pageProps} />
+    </main>
+ 
+    <Footer />  
+  </div> 
   </>
 }
 

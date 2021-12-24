@@ -20,14 +20,14 @@ import Link from 'next/link'
 const NavBar = () => {
   return (
    
-      <Disclosure as="nav" className="flex fixed bg-gray-800 w-full z-50">
+      <Disclosure as="nav" className="flex flex-col fixed bg-gray-800 w-full z-50">
       {({ open }) => (
         <>
           <div className="flex max-w-7xl justify-between mx-auto w-full">
             <div className="relative flex items-center justify-between h-16 w-full">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                 {/* Mobile menu button*/}
+                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -40,13 +40,13 @@ const NavBar = () => {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto cursor-pointer"
-                    src="/logo2.png"
+                    src="/Logo.png"
                     alt="Workflow"
                   />
            
                   <img
                     className="hidden lg:block h-8 w-auto cursor-pointer"
-                    src="/logo2.png"
+                    src="/Logo.png"
                     alt="Workflow"
                   />
                   <Link href='/'>
@@ -90,7 +90,7 @@ const NavBar = () => {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="/profile.svg"
+                        src="/Profile.svg"
                         alt=""
                       />
                     </Menu.Button>

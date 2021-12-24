@@ -15,24 +15,24 @@
   ```
 */
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+  universities: [
+    { name: 'England', href: '#' },
+    { name: 'Scotland', href: '#' },
+    { name: 'Wales', href: '#' },
+    { name: 'Northen Ireland', href: '#' },
   ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+  reviews: [
+    { name: 'Most Reviewed', href: '#' },
+    { name: 'Area', href: '#' },
+    { name: 'University', href: '#' },
+    { name: 'Map', href: '#' },
   ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+  account: [
+    { name: 'Dashboard', href: '#' },
+    { name: 'Profile', href: '#' },
+    { name: 'Security', href: '#' },
+    { name: 'Published Reviews', href: '#' },
+    { name: 'Comments', href: '#' },
   ],
   legal: [
     { name: 'Claim', href: '#' },
@@ -115,9 +115,9 @@ export default function Example() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">University</h3>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Universities</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.solutions.map((item) => (
+                  {navigation.universities.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white">
                         {item.name}
@@ -127,9 +127,9 @@ export default function Example() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Review</h3>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Reviews</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.support.map((item) => (
+                  {navigation.reviews.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white">
                         {item.name}
@@ -143,7 +143,7 @@ export default function Example() {
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Account</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.company.map((item) => (
+                  {navigation.account.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white">
                         {item.name}
