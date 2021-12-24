@@ -44,9 +44,8 @@ const NavBar = () => {
                     height={40}
                     width={40}
                   />
-           
                   <Image
-                    className="hidden lg:block h-8 w-auto cursor-pointer"
+                    className="hidden lg:flex h-8 w-auto cursor-pointer"
                     src="/Logo.png"
                     alt={"RMA"}
                     height={40}
