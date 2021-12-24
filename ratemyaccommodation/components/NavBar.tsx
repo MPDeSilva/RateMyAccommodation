@@ -16,6 +16,8 @@ function classNames(...classes) {
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import logo from "../public/Logo.png"
+import profile from "../public/Profile.svg"
 
 const NavBar = () => {
   return (
@@ -40,7 +42,7 @@ const NavBar = () => {
                 <div className="flex-shrink-0 flex items-center">
                   <Image
                     className="block lg:hidden h-8 w-auto cursor-pointer"
-                    src={"/Logo.png"}
+                    src={logo}
                     alt={"RMA"}
                     height={40}
                     width={40}
@@ -48,7 +50,7 @@ const NavBar = () => {
            
                   <Image
                     className="hidden lg:block h-8 w-auto cursor-pointer"
-                    src={"/Logo.png"}
+                    src={logo}
                     alt={"RMA"}
                     height={40}
                     width={40}
@@ -94,7 +96,7 @@ const NavBar = () => {
                       <span className="sr-only">Open user menu</span>
                       <Image
                         className="h-8 w-8 rounded-full"
-                        src={"/Profile.svg"}
+                        src={profile}
                         alt={"Profile"}
                         height={30}
                         width={30}
