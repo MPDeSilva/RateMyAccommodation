@@ -4,8 +4,6 @@ import Image from 'next/image'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import logo from "/public/Logo.png"
-import profile from "/public/Profile.svg"
 
 const navigation = [
   { name: 'Search', href: '/search', current: true },
@@ -41,7 +39,7 @@ const NavBar = () => {
                 <div className="flex-shrink-0 flex items-center">
                   <Image
                     className="block lg:hidden h-8 w-auto cursor-pointer"
-                    src={logo}
+                    src="/Logo.png"
                     alt={"RMA"}
                     height={40}
                     width={40}
@@ -49,7 +47,7 @@ const NavBar = () => {
            
                   <Image
                     className="hidden lg:block h-8 w-auto cursor-pointer"
-                    src={logo}
+                    src="/Logo.png"
                     alt={"RMA"}
                     height={40}
                     width={40}
@@ -95,7 +93,7 @@ const NavBar = () => {
                       <span className="sr-only">Open user menu</span>
                       <Image
                         className="h-8 w-8 rounded-full"
-                        src={profile}
+                        src="/Profile.svg"
                         alt={"Profile"}
                         height={30}
                         width={30}
