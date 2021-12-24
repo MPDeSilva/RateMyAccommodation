@@ -37,19 +37,19 @@ const NavBar = () => {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <Image
+                  <img
                     className="block lg:hidden h-8 w-auto cursor-pointer"
                     src="/Logo.png"
                     alt={"RMA"}
-                    height={40}
-                    width={40}
+                    // height={40}
+                    // width={40}
                   />
-                  <Image
+                  <img
                     className="hidden lg:flex h-8 w-auto cursor-pointer"
                     src="/Logo.png"
                     alt={"RMA"}
-                    height={40}
-                    width={40}
+                    // height={40}
+                    // width={40}
                   />
                   <Link href='/'>
                   <h1 className="mx-2 py-2 text-base md:text-2xl font-medium text-white rounded-md cursor-pointer">Rate My Accommodation</h1></Link>
@@ -90,12 +90,12 @@ const NavBar = () => {
                   <div>
                     <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
-                      <Image
+                      <img
                         className="h-8 w-8 rounded-full"
                         src="/Profile.svg"
                         alt={"Profile"}
-                        height={30}
-                        width={30}
+                        // height={30}
+                        // width={30}
                       />
                     </Menu.Button>
                   </div>
