@@ -40,16 +40,16 @@ const NavBar = () => {
                 <div className="flex-shrink-0 flex items-center">
                   <Image
                     className="block lg:hidden h-8 w-auto cursor-pointer"
-                    src="/Logo.png"
-                    alt="Workflow"
+                    src={"/Logo.png"}
+                    alt={"RMA"}
                     height={40}
                     width={40}
                   />
            
                   <Image
                     className="hidden lg:block h-8 w-auto cursor-pointer"
-                    src="/Logo.png"
-                    alt="Workflow"
+                    src={"/Logo.png"}
+                    alt={"RMA"}
                     height={40}
                     width={40}
                   />
@@ -94,8 +94,8 @@ const NavBar = () => {
                       <span className="sr-only">Open user menu</span>
                       <Image
                         className="h-8 w-8 rounded-full"
-                        src="/Profile.svg"
-                        alt=""
+                        src={"/Profile.svg"}
+                        alt={"Profile"}
                         height={30}
                         width={30}
                       />
