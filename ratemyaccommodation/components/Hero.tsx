@@ -40,7 +40,7 @@ const Hero = ({ data }) => {
           src="/Header-Web.jpg"
           alt="Header"
           width={850}
-          height={720}
+          height={730}
           objectFit="fill"
         />
       </div>

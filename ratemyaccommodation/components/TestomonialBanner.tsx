@@ -4,9 +4,9 @@ import React from 'react'
 const TestomonialBanner = () => {
   return (
     <>
-    <div className="flex justify-center items-center w-screen h-screen bg-gray-800">
-      <div className="container mx-auto mt-10 mb-10 lg:mb-40 lg:px-20">
-        <div className="relative w-full my-4 lg:w-9/12 mr-auto rounded-2xl shadow-2xl">
+    <div className="flex justify-center items-center w-screen h-full bg-gray-800">
+      <div className="container px-4 mx-auto my-10 md:pb-16 max-w-5xl">
+        <div className="w-full my-4 lg:w-9/12 mr-auto rounded-2xl shadow-2xl">
           <img alt="Card" src="https://i1.wp.com/blogs.qub.ac.uk/healthcarelibrary/wp-content/uploads/sites/7/2018/10/woman-801872_960_720.jpg?fit=960%2C644&ssl=1" className="max-w-full rounded-lg shadow-lg"/>
         </div>
         <div className="relative w-full lg:-mt-96 lg:w-3/6 p-8 ml-auto bg-blue-800 rounded-2xl">
