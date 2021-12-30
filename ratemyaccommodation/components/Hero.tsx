@@ -9,7 +9,7 @@ const Hero = ({ data }) => {
       <div className="flex-1 md:my-24 px-4 md:mr-4 xl:px-0 mx-auto max-w-7xl">
         <div className="flex flex-col">
           <div className="flex flex-row md:mt-8 mt-4 md:mb-8 mb-4">
-            <h1 className="font-bold tracking-normal text-4xl md:text-6xl text-grey5 w-full">Find the best accommodation <span className="text-blue">without the hassle</span></h1>
+            <h1 className="font-bold tracking-normal text-4xl md:text-6xl text-grey5 w-full">Find the best accommodation <span className="text-blue-600">without the hassle</span></h1>
           </div>
         </div>
         <div className="list-disc">

@@ -1,4 +1,20 @@
 module.exports = {
+  plugins: [
+    'tailwindcss',
+    'postcss-flexbugs-fixes',
+    [
+      'postcss-preset-env',
+      {
+        autoprefixer: {
+          flexbox: 'no-2009',
+        },
+        stage: 3,
+        features: {
+          'custom-properties': false,
+        },
+      },
+    ],
+  ],
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   media: false,
   important: true,
@@ -7,6 +23,8 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
+      white: "#FFFFFF",
+      black: "#000000",
       red: {
         50: "#FEF2F2",
         100: "#FEE2E2",
@@ -15,7 +33,9 @@ module.exports = {
         400: "#F96277",
         500: "#EF4444",
         600: "#DC2626",
-        700: "#B91C1C"
+        700: "#B91C1C",
+        800: '#9b2c2c',
+        900: '#742a2a',
       },
       yellow: {
         50: "#FFFBEB",
@@ -25,9 +45,21 @@ module.exports = {
         400: "#FCCB76",
         500: "#F59E0B",
         600: "#D97706",
-        700: "#B45309"
+        700: "#B45309",
+        800: '#975a16',
+        900: '#744210',
       },
-      orange: "#FA8C6D",
+      orange: {
+      100: '#fffaf0',
+      200: '#feebc8',
+      300: '#fbd38d',
+      400: '#f6ad55',
+      500: '#ed8936',
+      600: '#dd6b20',
+      700: '#c05621',
+      800: '#9c4221',
+      900: '#7b341e'
+      },
       green: {
         50: "#ECFDF5",
         100: "#D1FAE5",
@@ -36,18 +68,54 @@ module.exports = {
         400: "#34D399",
         500: "#10B981",
         600: "#059669",
-        700: "#047857"
+        700: "#047857",
+        800: '#276749',
+        900: '#22543d'
       },
-      blue: "#3C6A8B",
-      indigo: { 100: "#5B6098", 500: "#4e5383" },
-      violet: "#8760A8",
-      white: "#FFFFFF",
-      grey1: "#FBFAFB",
-      grey2: "rgb(248, 249, 250)",
-      grey3: "#D1D1D6",
-      grey4: "#C7C7CC",
-      grey5: "#292721",
-      black: "#000000",
+      blue: {
+        100: '#ebf8ff',
+        200: '#bee3f8',
+        300: '#90cdf4',
+        400: '#63b3ed',
+        500: '#4299e1',
+        600: '#3182ce',
+        700: '#2b6cb0',
+        800: '#2c5282',
+        900: '#2a4365',
+      },
+      indigo: {
+        100: '#ebf4ff',
+        200: '#c3dafe',
+        300: '#a3bffa',
+        400: '#7f9cf5',
+        500: '#667eea',
+        600: '#5a67d8',
+        700: '#4c51bf',
+        800: '#434190',
+        900: '#3c366b',
+      },
+      purple: {
+        100: '#faf5ff',
+        200: '#e9d8fd',
+        300: '#d6bcfa',
+        400: '#b794f4',
+        500: '#9f7aea',
+        600: '#805ad5',
+        700: '#6b46c1',
+        800: '#553c9a',
+        900: '#44337a',
+      },
+      pink: {
+        100: '#fff5f7',
+        200: '#fed7e2',
+        300: '#fbb6ce',
+        400: '#f687b3',
+        500: '#ed64a6',
+        600: '#d53f8c',
+        700: '#b83280',
+        800: '#97266d',
+        900: '#702459',
+      },  
       gray: {
         50: "rgba(249, 250, 251, 1)",
         100: "rgba(243, 244, 246, 1)",
@@ -59,6 +127,18 @@ module.exports = {
         700: "#374151",
         800: "#1F2937",
         900: "#111827"
+      },
+      violet: "#8760A8",
+      teal: {
+        100: '#e6fffa',
+        200: '#b2f5ea',
+        300: '#81e6d9',
+        400: '#4fd1c5',
+        500: '#38b2ac',
+        600: '#319795',
+        700: '#2c7a7b',
+        800: '#285e61',
+        900: '#234e52',
       }
     },
     screens: {
@@ -121,10 +201,5 @@ module.exports = {
   },
   variants: {
     extend: {}
-  },
-  plugins: [
-  "postcss-import",
-  "tailwindcss",
-  "autoprefixer"
-]
+  }
 };
