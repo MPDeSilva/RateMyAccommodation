@@ -52,7 +52,7 @@ const NavBar = () => {
                     // width={40}
                   />
                   <Link href='/'>
-                    <h1 className="mx-2 md:py-2 text-2xl font-medium text-white cursor-pointer">RateMyAccommodation</h1>
+                    <h1 className="mx-2 md:py-2 text-lg md:text-2xl font-medium text-white cursor-pointer">RateMyAccommodation</h1>
                   </Link>
                 </div>
               </div>
