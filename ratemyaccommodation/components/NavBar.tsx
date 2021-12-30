@@ -24,17 +24,6 @@ const NavBar = () => {
         <>
           <div className="flex max-w-7xl justify-between mx-auto w-full">
             <div className="relative flex items-center justify-between h-16 w-full">
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                 {/* Mobile menu button*/}
-                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
@@ -52,7 +41,7 @@ const NavBar = () => {
                     // width={40}
                   />
                   <Link href='/'>
-                    <h1 className="mx-2 md:py-2 text-lg md:text-2xl font-medium text-white cursor-pointer">RateMyAccommodation</h1>
+                    <h1 className="mx-2 md:py-2 text-base sm:text-lg md:text-2xl font-medium text-white cursor-pointer">RateMyAccommodation</h1>
                   </Link>
                 </div>
               </div>
@@ -87,12 +76,12 @@ const NavBar = () => {
                 </button>
 
                 {/* Profile dropdown */}
-                <Menu as="div" className="ml-3 relative">
+                <Menu as="div" className="ml-3 sm:right-10 right-6 relative">
                   <div>
                     <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
                       <img
-                        className="h-8 w-8 rounded-full"
+                        className="sm:h-8 sm:w-8 h-5 w-5 rounded-full"
                         src="/Profile.svg"
                         alt={"Profile"}
                         // height={30}
@@ -161,6 +150,17 @@ const NavBar = () => {
                     </Menu.Items>
                   </Transition>
                 </Menu>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                 {/* Mobile menu button*/}
+                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XIcon className="block sm:h-6 sm:w-6 h-5 w-5" aria-hidden="true" />
+                  ) : (
+                    <MenuIcon className="block sm:h-6 sm:w-6 h-5 w-5" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
               </div>
             </div>
           </div>
