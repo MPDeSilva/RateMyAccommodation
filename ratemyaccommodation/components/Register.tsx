@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Router from 'next/router';
 import firebase from "firebase/app";
 import "firebase/auth";
-import initFirebase from "../services/firebase";
 import { LockClosedIcon } from '@heroicons/react/solid'
 import Link from 'next/link';
 

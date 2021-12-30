@@ -1,5 +1,16 @@
 import { LockClosedIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
+import React from "react";
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+import firebase from "../firebase/clientApp";
+
+ // Configure FirebaseUI.
+ const uiConfig = {
+  // Redirect to / after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
+  signInSuccessUrl: "/",
+  // We will display Email as auth providers.
+  signInOptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
+};
 
 export default function Login() {
   return (
@@ -30,6 +41,7 @@ export default function Login() {
               </a>
             </p>
           </div>
+          <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
           <form className="mt-8 space-y-6" action="#" method="POST">
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="rounded-md shadow-sm -space-y-px">
