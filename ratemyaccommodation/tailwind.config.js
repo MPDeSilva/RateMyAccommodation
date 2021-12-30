@@ -3,9 +3,12 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/line-clamp')
+    require('@tailwindcss/line-clamp'), 
+    "postcss-import",
+    "tailwindcss",
+    "autoprefixer"
   ],
-  purge: [
+  content: [
     './components/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}'
   ],
