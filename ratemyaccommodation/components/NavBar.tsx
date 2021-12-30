@@ -77,7 +77,7 @@ const NavBar = () => {
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="ml-3 sm:right-10 right-6 md:right-0 relative">
-                  {/* <div>
+                  <div>
                     <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
                       <img
@@ -88,7 +88,7 @@ const NavBar = () => {
                         // width={30}
                       />
                     </Menu.Button>
-                  </div> */}
+                  </div>
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-100"
