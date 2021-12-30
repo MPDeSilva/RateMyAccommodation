@@ -31,7 +31,7 @@ export default function Register() {
               <a className="font-medium text-indigo-600 hover:text-indigo-500">
                 <Link href="/login">
                   login here for an account
-                  </Link>
+                </Link>
               </a>
             </p>
           </div>
