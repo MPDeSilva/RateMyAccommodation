@@ -1,4 +1,5 @@
 import { LockClosedIcon } from '@heroicons/react/solid'
+import Link from 'next/link'
 
 export default function Login() {
   return (
@@ -22,8 +23,10 @@ export default function Login() {
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
             <p className="mt-2 text-center text-sm text-gray-600">
               Or{' '}
-              <a href="/register" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <a className="font-medium text-indigo-600 hover:text-indigo-500">
+                <Link href="/register">
                 register here for an account
+                </Link>
               </a>
             </p>
           </div>
