@@ -24,7 +24,7 @@ const NavBar = () => {
         <>
           <div className="flex max-w-7xl justify-between mx-auto w-full">
             <div className="relative flex items-center justify-between h-16 w-full">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                  {/* Mobile menu button*/}
                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -52,7 +52,7 @@ const NavBar = () => {
                     // width={40}
                   />
                   <Link href='/'>
-                    <h1 className="mx-2 md:py-2 text-base md:text-2xl font-medium text-white cursor-pointer">Rate My Accommodation</h1>
+                    <h1 className="mx-2 md:py-2 text-base md:text-2xl font-medium text-white cursor-pointer">RateMyAccommodation</h1>
                   </Link>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const NavBar = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="md:flex hidden absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
                   className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -110,12 +110,24 @@ const NavBar = () => {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            href="/login" >
+                              <div
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700 cursor-pointer')}
+                          >
+                            Login/Register
+                            </div>
+                          </Link>
+                        )}
+                      </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
                           <Link
                             href="#" >
                               <div
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700 cursor-pointer')}
                           >
                             Your Profile
                             </div>
@@ -127,7 +139,7 @@ const NavBar = () => {
                           <Link
                             href="#" >
                               <div
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700 cursor-pointer')}
                           >
                             Settings
                             </div>
@@ -139,7 +151,7 @@ const NavBar = () => {
                           <Link
                             href="#" >
                               <div
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700 cursor-pointer')}
                           >
                             Sign out
                             </div>

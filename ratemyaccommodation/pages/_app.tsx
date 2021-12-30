@@ -6,7 +6,7 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   return <>
   <Head>
-    <title>Rate My Accommodation</title>
+    <title>RateMyAccommodation</title>
     <meta charSet="utf-8" />
     <meta property='og:image' content="/Logo.png" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />

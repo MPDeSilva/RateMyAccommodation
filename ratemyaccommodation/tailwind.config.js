@@ -102,6 +102,7 @@ module.exports = {
 
     backgroundImage: {
       uniSearch : "url('/SearchMain.jpeg')",
+      uniLogin : "url('/LoginMain.jpeg')",
       footer: "url('/FooterGraphic.svg')",
       smallBlueRectangle: "url('/SmallRectangleBabyBlue.svg')",
       largeBlueRectangle: "url('/LargeRectangleBabyBlue.svg')",
