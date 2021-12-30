@@ -70,7 +70,7 @@ const MostHero = () => {
                   height={300}
                 />
 
-                <div className={"px-8 pb-3 pt-6 text-left text-black"}>
+                <div className={"px-8 pb-3 pt-6 text-center text-black"}>
                   <h3 className="text-2xl font-semibold" style={{ marginTop: 0 }}>
                     Coventry University
                   </h3>

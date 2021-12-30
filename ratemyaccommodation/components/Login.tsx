@@ -41,8 +41,8 @@ export default function Login() {
               </a>
             </p>
           </div>
-          <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <StyledFirebaseAuth className="rounded-3xl border-transparent border-0 " uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+          {/* <form className="mt-8 space-y-6" action="#" method="POST">
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
@@ -106,7 +106,7 @@ export default function Login() {
                 Sign in
               </button>
             </div>
-          </form>
+          </form> */}
         </div>
       </div>
     </>
