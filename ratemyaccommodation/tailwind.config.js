@@ -5,7 +5,7 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/line-clamp')
   ],
-  content: ['.src/pages/**/*.{js,ts,jsx,tsx}', '.src/components/**/*.{js,ts,jsx,tsx}'],
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   media: false,
   important: true,
   theme: {
