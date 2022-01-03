@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'prismic-reactjs'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const MostHero = () => {
   return (

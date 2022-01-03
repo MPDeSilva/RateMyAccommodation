@@ -4,13 +4,13 @@ import InfoBanner from '../components/InfoBanner'
 import MostHero from '../components/MostHero'
 import TestomonialBanner from '../components/TestomonialBanner'
 import firebase from '../firebase/clientApp'
-import { useAuthState } from "react-firebase-hooks/auth";
+import { useAuthState } from "react-firebase-hooks/auth"
 
 export default function Home() {
 
-  // const [user, loading, error] = useAuthState(firebase.auth());
-
-  // console.log("Loading:", loading, "|", "Current user:", user);
+  firebase
+ const [user, loading, error] = useAuthState(firebase.auth());
+ console.log("Loading:", loading, "|", "Current user:", user);
 
   return (
     <>
